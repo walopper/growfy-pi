@@ -6,6 +6,7 @@ const Readline = SerialPort.parsers.Readline
 var serial
 
 try {
+    
   const port = new SerialPort('/dev/ttyACM0', {
     baudRate: 9600
   })
