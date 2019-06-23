@@ -8,13 +8,12 @@ module.exports = (strData) => {
     try {
         data = JSON.parse(strData) || {}
     } catch(error) {
-        console.error("JSON parse error", strData)
+        // console.error("JSON parse error", strData)
     }
 
-    if(data) console.log(data)
+    if(data) console.log('Monitor de estado:\n', JSON.stringify(data, 0, 3))
 
-    
-    if(false && data.temp && !posting){
+    if(data.temp && !posting){
         console.log("Posting");
         posting = true
 
