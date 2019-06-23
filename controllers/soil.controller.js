@@ -14,7 +14,7 @@ module.exports = (strData) => {
     if(data) console.log('Monitor de estado:\n', JSON.stringify(data, 0, 3))
 
     if(data.temp && !posting){
-        console.log("Posting");
+        console.log("Posting")
         posting = true
 
         axios.post(endpoint, data)
